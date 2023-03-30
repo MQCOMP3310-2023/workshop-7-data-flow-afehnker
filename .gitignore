@@ -1,0 +1,11 @@
+hello_logger.log.*
+app/hello_logger.log.*
+*.class
+*.jar
+*.war
+*.ear
+.idea/
+*.iml
+*.ipr
+*.iws
+
