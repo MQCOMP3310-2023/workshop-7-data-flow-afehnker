@@ -2,7 +2,7 @@
  * @name Local flow
  * @kind path-problem
  * @problem.severity warning
- * @id java/example/global-flow
+ * @id java/example/local-flow
  */
 
 import java
