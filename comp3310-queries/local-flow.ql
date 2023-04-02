@@ -1,6 +1,6 @@
 /**
  * @name Local flow
- * @kind path-problem
+ * @kind problem
  * @problem.severity warning
  * @id java/example/local-flow
  */
@@ -27,4 +27,4 @@ from UnsafeInput source, VarAccess sink
 where 
 exists(PrepareStmt p| p.getArgument(0)=sink) and
 TaintTracking::localTaint(DataFlow::exprNode(source), DataFlow::exprNode(sink))
-select sink.getNode(), source, sink, "Possible flow of untrusted input"
+select source, "The source",  sink, "The sink"
